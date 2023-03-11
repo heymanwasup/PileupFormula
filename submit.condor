@@ -1,0 +1,33 @@
+Universe   = vanilla
+Executable = ./run_condor.sh
+Log        = ./submit.log
+
+Arguments  = 100 $(Process) 1000000
+Output     = ./logs/run.$(Process).out
+Error      = ./logs/run.$(Process).err
+Queue 100
+
+Arguments  = 200 $(Process) 1000000
+Output     = ./logs/run.$(Process).out
+Error      = ./logs/run.$(Process).err
+Queue 100
+
+Arguments  = 400 $(Process) 1000000
+Output     = ./logs/run.$(Process).out
+Error      = ./logs/run.$(Process).err
+Queue 100
+
+Arguments  = 800 $(Process) 1000000
+Output     = ./logs/run.$(Process).out
+Error      = ./logs/run.$(Process).err
+Queue 100
+
+Arguments  = 1600 $(Process) 1000000
+Output     = ./logs/run.$(Process).out
+Error      = ./logs/run.$(Process).err
+Queue 100
+
+Arguments  = 3200 $(Process) 1000000
+Output     = ./logs/run.$(Process).out
+Error      = ./logs/run.$(Process).err
+Queue 100
